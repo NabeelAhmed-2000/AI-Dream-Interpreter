@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dream Interpreter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Dream Interpreter</h1>
+            <p>Describe your dream to begin.</p>
+        </header>
+        <main class="app-main">
+            <div class="dream-input-section">
+                <textarea id="dream-input" placeholder="I dreamt I was flying over a city made of glass..."></textarea>
+                <div class="button-group">
+                    <button id="interpret-button">Interpret Dream</button>
+                    <button id="clear-button">Start New</button>
+                </div>
+            </div>
+            <div class="results-section">
+                <h2>Interpretation</h2>
+                <div id="interpretation-output" class="result-box">
+                    <p>Your results will appear here.</p>
+                </div>
+
+                <h3>Mood Palette</h3>
+                <div id="mood-palette-output" class="result-box"></div>
+
+                <h3>Key Symbols</h3>
+                <div id="key-symbols-output" class="result-box"></div>
+
+                <button id="save-log-button" style="display: none;">Save to Log</button>
+            </div>
+        </main>
+        <footer>
+            <h2>Dream Log</h2>
+            <ul id="dream-log-list">
+                </ul>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

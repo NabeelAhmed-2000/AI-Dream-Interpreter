@@ -1,0 +1,123 @@
+/* Import a clean, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General Body & Layout Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08); /* Softer, more diffuse shadow */
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Main two-column layout for the app */
+.app-main {
+    display: flex;
+    gap: 30px;
+}
+
+.dream-input-section, .results-section {
+    flex: 1; /* Each section takes up half the space */
+}
+
+/* Form & Button Elements */
+textarea#dream-input {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#interpret-button {
+    /* A subtle gradient for a more modern feel */
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    flex-grow: 1; /* Takes up more space */
+    border: none;
+    transition: all 0.3s ease; /* Transition for hover effect */
+}
+
+#interpret-button:hover {
+    transform: translateY(-2px); /* Lifts the button slightly */
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3); /* Adds a glow on hover */
+}
+
+#clear-button, #save-log-button {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#clear-button:hover, #save-log-button:hover {
+    background-color: #bdbdbd;
+}
+
+
+/* Results & Log Display */
+.result-box {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+
+#mood-palette-output {
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+#dream-log-list {
+    list-style-type: none;
+    padding: 0;
+}
