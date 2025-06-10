@@ -1,1 +1,1 @@
-# ai-dream-interpreter
+# AI-Dream-Interpreter
